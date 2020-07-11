@@ -1,0 +1,66 @@
+title: Parul Chandel - Software Engineer
+logo:  # you can add own logo.
+description: JavaScript Developer and a Lifelong Student of Computer Science, just hoping to create something great before I die
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Author Settings
+author:
+  name: Parul Chandel
+  image: '/assets/img/01.jpg'
+  job: Software Engineer
+  bio: JavaScript Developer and a Lifelong Student of Computer Science, just hoping to create something great before I die
+  email: parul.chandel14@gmail.com
+
+
+# Contact links
+contact:
+  - name: LinkedIn
+    link: https://www.linkedin.com/in/parulc7
+  - name: Facebook
+    link: https://facebook.com/parul.chandel.35
+  - name: GitHub
+    link: https://www.github.com/parulc7
+
+
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+
+
+# Google Analytics
+google-analytics: # add your identifier. For example UA-99631805-1.
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
